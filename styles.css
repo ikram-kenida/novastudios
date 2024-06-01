@@ -1,0 +1,343 @@
+
+nav , .offcanvas{
+    background: linear-gradient(45deg, purple,rgb(7, 7, 60) , purple, rgb(2, 2, 48)) !important;
+    background-size: 300% 300% !important;
+    animation: gradientAnimation 15s ease infinite !important;
+}
+body {
+    cursor: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    background: linear-gradient(45deg, rgb(73, 2, 73),rgb(7, 7, 60) , rgb(92, 16, 92), rgb(2, 2, 48));
+    background-size: 300% 300%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: rise 10s infinite ease-in;
+}
+
+.bubble:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    left: 10%;
+    animation-duration: 12s;
+}
+
+.bubble:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    left: 20%;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(3) {
+    width: 50px;
+    height: 50px;
+    left: 25%;
+    animation-duration: 14s;
+    animation-delay: 4s;
+}
+
+.bubble:nth-child(4) {
+    width: 80px;
+    height: 80px;
+    left: 40%;
+    animation-duration: 16s;
+    animation-delay: 3s;
+}
+
+.bubble:nth-child(5) {
+    width: 30px;
+    height: 30px;
+    left: 70%;
+    animation-duration: 12s;
+    animation-delay: 7s;
+}
+
+.bubble:nth-child(6) {
+    width: 100px;
+    height: 100px;
+    left: 80%;
+    animation-duration: 18s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(7) {
+    width: 25px;
+    height: 25px;
+    left: 90%;
+    animation-duration: 20s;
+    animation-delay: 5s;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.intro {
+    border-radius: 20px;
+}
+
+.intro img {
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.intro h3 {
+    margin-top: 120px;
+}
+
+h3 {
+    font-size: x-large !important;
+    font-weight: bold !important;
+    color: rgb(3, 3, 39) !important;
+}
+
+h3 span {
+    padding-bottom: 15px;
+    font-size: 40px;
+    color: purple;
+    border-bottom: 1px solid purple;
+   
+}
+.vibrate-1 {
+	-webkit-animation: vibrate-1 0.3s linear infinite both;
+	        animation: vibrate-1 0.3s linear infinite both;
+}
+
+ @-webkit-keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  @keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  
+.service {
+    padding: 30px;
+    background-color: transparent;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.service i {
+    font-size: 50px;
+    color: black;
+}
+
+.service h4 {
+    color: purple;
+}
+
+.service h6 , p{
+    color: white;
+}
+.types{
+    background-color: whitesmoke;
+    padding: 50px;
+   
+}
+.types p{
+    color: purple !important;
+}
+
+.type img{
+    height: 300px;
+    border-radius: 10px;
+}
+.type h3{
+    background: linear-gradient(45deg, purple,rgb(7, 7, 60) , purple, rgb(2, 2, 48)) !important;
+    background-size: 300% 300% !important;
+    animation: gradientAnimation 15s ease infinite !important;
+    color: white !important;
+    border-radius: 10px;
+    padding: 10px;
+    
+
+}
+.card{
+    border: none !important;
+}
+.card .thumbnail {
+    position: relative;
+    z-index: 1;
+}
+
+.card .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    width: 100%;
+}
+
+.card:hover .thumbnail {
+    opacity: 0;
+}
+
+.card:hover .video {
+    opacity: 1;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.form-control{
+    background: transparent !important;
+    border-radius: 10px !important;
+    padding: 10px;
+    margin-bottom: 30px !important;
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+}
+.form-control::placeholder{
+    color: white !important;
+}
+.form{
+    position: relative;
+    z-index: 1000px;
+}
+
+.btn{
+    background-color: purple !important;
+    color: white !important;
+}
+footer{
+    position: relative;
+    z-index: 1000px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+    margin-top: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white !important;
+    cursor: none;
+}
+footer p{
+    color: white !important;
+}
+.btn{
+    position: relative;
+    z-index: 500Px;
+}
+.form-control{
+    color: white !important;
+}
+
+
+.custom-cursor {
+    position: fixed;
+    z-index: 300000000000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: purple;
+    pointer-events: none; /* Ensure cursor doesn't interfere with clickable elements */
+    mix-blend-mode: difference; /* Blend mode to make the cursor appear over any background */
+    transition: transform 0.2s ease; /* Smooth transition for cursor movement */
+}
+.btn{
+    cursor: none !important;
+}
